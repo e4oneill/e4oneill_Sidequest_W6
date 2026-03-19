@@ -133,11 +133,11 @@ async function boot() {
   // --- Audio registry ---
   // (AudioContext may still be locked until the user clicks/presses a key.)
   soundManager = new SoundManager();
-  soundManager.loadMusic("assets/sfx/Eric Skiff - Underclocked ♫ NO COPYRIGHT 8-bit Music + Background - Free Music (128k).mp3");
-  soundManager.load("jump", "assets/sfx/Mario jumping sound effect. - Takeo'sTakis (128k).mp3");
-  soundManager.load("attack", "assets/sfx/Sword Slash-Sound Effect HD - Gaming Sound FX (128k).mp3", 0.2);
-  soundManager.load("hurt", "assets/sfx/Minecraft Damage - Sound Effect - Sounds for Creator (128k).mp3");
-  soundManager.load("leaf", "assets/sfx/Coin Collect SFX ROYALTY FREE SOUND EFFECTS - Sound SFX Centre (128k).mp3");
+  soundManager.loadMusic("assets/sfx/music.mp3");
+  soundManager.load("jump", "assets/sfx/jump.mp3");
+  soundManager.load("attack", "assets/sfx/attack.mp3", 0.2);
+  soundManager.load("hurt", "assets/sfx/hurt.mp3");
+  soundManager.load("leaf", "assets/sfx/leaf.mp3");
 
   // --- Parallax layer defs (VIEW) ---
   const defs = levelPkg.level?.view?.parallax ?? [];
