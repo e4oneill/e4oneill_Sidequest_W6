@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "levels": [
+    {
+      "id": "ex5_level1",
+      "name": "Example 5 Level",
+
+      "tiles": {
+        "tileW": 24,
+        "tileH": 24,
+        "frameW": 32,
+        "frameH": 32
+      },
+
+      "tilemap": [
+        "                    g   g   b  x        ",
+        "                b x         LggR        ",
+        "      x   f     LggR                    ",
+        "     LR   LgR          LR               ",
+        "   fx  b        x   b                   ",
+        "   LgggR   x   LR   LgR x   b  xf       ",
+        "         LgR  b x       g   LggggR      ",
+        " fx           LgR                    fx ",
+        " LgR      b                         LggR",
+        "         LgR        f x    LR  LgR  [dd]",
+        "   x     [d]      x LggR   x    ff  [dd]",
+        "LgggRffLggggggRfffLgggg]fffgfLgggggggggg",
+        "dddddddddddddddddddddddddddddddddddddddd"
+      ],
+
+      "rules": {},
+
+      "winScore": 15,
+      "gravity": 10,
+      "fallResetMarginTiles": 3,
+
+      "playerStart": { "x": 32, "y": 216 },
+
+      "view": {
+        "viewW": 240,
+        "viewH": 192,
+        "background": [69, 61, 79],
+        "cameraLerp": 0.1,
+
+        "parallax": [
+          { "img": "assets/background/10_Sky.png", "speed": 0.02 },
+          { "img": "assets/background/09_Forest.png", "speed": 0.1 },
+          { "img": "assets/background/08_Forest.png", "speed": 0.2 },
+          { "img": "assets/background/07_Forest.png", "speed": 0.3 },
+          { "img": "assets/background/06_Forest.png", "speed": 0.4 },
+          { "img": "assets/background/04_forest.png", "speed": 0.5 }
+        ]
+      },
+
+      "overrides": {
+        "hud": {
+          "rescueLabel": "RESCUED",
+          "winScoreLabel": "RESCUED %d/%d"
+        }
+      }
+    }
+  ]
+}
